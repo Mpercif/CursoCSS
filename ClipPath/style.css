@@ -1,0 +1,18 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.clip-path{
+    margin: auto;
+    width: 559px;
+    height: 240px;
+    background-color: royalblue;
+    clip-path: url(#mascara);
+}

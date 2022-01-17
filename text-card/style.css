@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.card{
+    background-image: linear-gradient(#0f7173b4, #0f71731a), url(lake-ge717f4011_1280.jpg) ;
+    width: 400px;
+    color: white;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.5) ;
+}
+
+.title{
+    border-bottom: 5px solid white;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.copy{
+    font-weight: 300;
+    line-height: 2;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.cta{
+    padding: 15px 25px;
+    width: 200px;
+    display: block;
+    border: 1px solid white;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+

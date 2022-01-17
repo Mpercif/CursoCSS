@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 90%;
+    height: 600px;
+    margin: 30px auto;
+    outline: 3px solid black;
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: stretch;
+}
+
+.grid__item{
+    padding: 20px 0;
+    font-size: 2rem;
+    color: white;
+}
+
+.grid__item:nth-child(1){
+    background-color: steelblue;
+}
+.grid__item:nth-child(2){
+    background-color: tomato;
+}
+.grid__item:nth-child(3){
+    background-color: chocolate;
+}
+.grid__item:nth-child(4){
+    background-color: slateblue;
+}
+

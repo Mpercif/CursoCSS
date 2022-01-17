@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    height: 100px;
+}
+
+.box1{
+    background: steelblue ;
+    padding: 0.1px;
+}
+.box2{
+    background: tomato;    
+}
+
+nav{
+    background: gold;
+    margin-top: 10px;
+    height: 48px;
+}

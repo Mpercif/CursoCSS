@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0.1px;
+    display: block;
+    background-image: linear-gradient(#4683b47e, #ff634785), url(imagenes/pc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 40vh 0;
+}

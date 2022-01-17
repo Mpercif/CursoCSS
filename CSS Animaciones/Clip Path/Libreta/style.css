@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    min-height: 100vh;
+}
+
+.book{
+    width: 410px;
+    height: 500px;
+    background-color: #f2f2f2;
+    background-size: 35px 43px;
+    background-image:  repeating-linear-gradient(0deg, #000000, #000000 1.5px, #f2f2f2 1.5px, #f2f2f2);
+    padding: 45px 0 45px 70px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+}
+
+.book__img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -60px;
+    right: -50px;
+    transform: scale(0) rotate(360deg);
+    animation: spiderman 1s 2s forwards;
+}
+
+.book__title{
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    clip-path: inset(0 100% 0 0);
+    animation: escribir 3s forwards;
+}
+
+.book__paragraph{
+    font-size: 1.3rem;
+    clip-path: inset(0 100% 0 0);
+    animation: escribir 2s 2s forwards;
+}
+
+.line{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background-color: red;
+}
+
+.circle{
+    background-color: white ;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 135px;
+    left: 8px;
+    border-radius: 50%;
+    color: white ;
+    box-shadow: 0 175px;
+}
+
+.line-h{
+    background: rgb(113,113,113);
+    background: linear-gradient(280deg, rgba(113,113,113,1) 0%, rgba(240,240,240,1) 49%, rgba(186,186,186,1) 100%);
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    top: 142px;
+    left: -20px;
+    border-radius: 50px;
+}
+
+.line-h::before{
+    content: "";
+    background: rgb(113,113,113);
+    background: linear-gradient(280deg, rgba(113,113,113,1) 0%, rgba(240,240,240,1) 49%, rgba(186,186,186,1) 100%);
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    top: 175px;
+    left: 0px;
+    border-radius: 50px;
+}
+
+@keyframes escribir {
+    to{
+        clip-path: inset(0 0 0 0);
+    }
+}   
+
+@keyframes spiderman {
+    to{
+        transform: scale(1) rotate(0deg);
+    }
+}

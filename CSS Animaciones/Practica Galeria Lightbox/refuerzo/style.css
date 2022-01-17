@@ -1,0 +1,114 @@
+
+:root{
+    --image-url: url(../img/imagen1.jpg)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.galery{
+    width: 90%;
+    max-width: 1200px;
+    min-height: 600px ;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+.grid__galery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 10px;
+}
+
+.gallery__picture{
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery__picture::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(70, 131, 180, 0.335);
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease ;
+}
+
+.gallery__picture:hover::before{
+    transform: translateY(0%);
+}
+
+
+.galery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.show{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.294);
+    display: flex;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.show:target{
+    transform: scale(1);
+}
+
+.container__show{
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    position: relative;
+    background-image: var(--image-url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.show__close{
+    position: absolute;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    right: -20px;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: crimson;
+}
+
+.show--img2{
+    --image-url: url(../img/imagen2.jpg)
+}
+.show--img3{
+    --image-url: url(../img/imagen3.jpg)
+}
+.show--img4{
+    --image-url: url(../img/imagen4.jpg)
+}
+.show--img5{
+    --image-url: url(../img/imagen5.jpg)
+}
+.show--img6{
+    --image-url: url(../img/imagen6.jpg)
+}

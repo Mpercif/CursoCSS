@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 15px 20px;
+}
+
+
+.box{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: steelblue;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+.container{
+    border: 2px solid tomato;
+    padding: 25px 15px;
+    margin-bottom: 10px;
+}
+
+.der{
+    margin-left: 15px;
+}
+
+/* .box:nth-of-type(2){
+    background-color: red;
+} */
+
+.container :only-child{
+    background-color: rebeccapurple;
+}

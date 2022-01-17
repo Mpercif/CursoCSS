@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    outline: 1px solid red;
+    height: 500px;
+    margin: 30px auto;
+}
+
+.element{
+    background-color: crimson;
+    width: 128px;
+    height: 128px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    transition-property: transform;
+    transition-duration: 500ms;
+}
+
+.element:hover{
+    transform: scale(0.95);
+}

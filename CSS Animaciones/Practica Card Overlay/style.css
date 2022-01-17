@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.picture{
+    width: 400px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.picture__img{
+    width: 100%;
+    display: block;
+}
+
+.picture__container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(70, 131, 180, 0.753) ;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    transform: translateX(-100%);
+    transition: transform .4s;
+}
+
+.picture:hover .picture__container{
+    transform: translateX(0);
+}
+
+.picture__title{
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 4px solid currentColor;
+    padding-bottom: 8px;
+    margin-bottom: 1rem;
+}
+
+.picture__copy{
+    line-height: 1.5;
+}

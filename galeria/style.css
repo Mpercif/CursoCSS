@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.galery{
+    width: 90%;
+    margin: auto;
+}
+
+.galery h2{
+    margin: 40px 0;
+    font-size: 35px;
+    display: inline-block;
+    border-bottom: 4px solid #4343a1;
+    padding-bottom: 20px;
+}
+
+.container{
+    font-size: 0;
+    display: flex;
+    max-height: 500px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.container img{
+    width: 30%;
+    height: fit-content;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}

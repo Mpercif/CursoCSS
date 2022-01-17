@@ -1,0 +1,43 @@
+.svg{
+    width: 500px;
+}
+
+#globo{
+    transform: scale(.7);
+    transform-origin: top right;
+    animation: animate 2s 1s forwards;
+}
+
+#background{
+    transform: translateX(-100%);
+    animation: animate 2s forwards;
+}
+
+@keyframes animate {
+    to{
+        transform: unset;
+    }
+}
+
+.svg2{
+    width: 400px;
+    display: block;
+    margin: 30px auto;
+    outline: 4px solid #000;
+}
+
+#telefono{
+    transform: scale(.5);
+    transform-origin: center;
+    animation: rotate 2s infinite alternate;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0) scale(1);
+    }
+
+    100%{
+        transform: rotate(360deg) scale(.4);
+    }
+}

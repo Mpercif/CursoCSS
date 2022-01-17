@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+    --gradient: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    --gradient1: linear-gradient(120deg, rgba(224, 195, 252, 0.459) 0%, rgba(142, 197, 252, 0.452) 100%);
+    --url-img: url("2.jpg");
+    --box-shadow: 6px 6px 10px rgba(0,0,0, 0.5);
+    --width: 100%;
+    --radius: 8px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: var(--gradient1), var(--url-img);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.form{
+    width: 400px;
+    background-color: #FFF;
+    margin: 150px auto;
+    padding: 30px 20px 40px;
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+
+}
+
+.input{
+    width: var(--width);
+    padding: 20px 4px;
+    margin-bottom: 10px;
+    border: 1px solid #b39b9b;
+    outline: none;
+}
+
+.input, input{
+    font-family: inherit;
+}
+
+.form__title{
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.form_message{
+    max-width: var(--width);
+    min-width: var(--width);
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.form__submit{
+    width: var(--width);
+    background-image: var(--gradient) ;
+    font-size: 18px;
+    padding: 15px 30px;
+    display: block;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form__submit:hover{
+    background-image: var(--gradient1) 
+}
+
+@media screen and (max-width: 425px){
+    .form{
+        width: 90%;
+    }
+
+    .form_message{
+        max-width: var(--width);
+        min-width: var(--width);
+        min-height: 100px;
+        max-height: 100px;
+    }
+
+    .input{
+        width: var(--width);
+        padding: 12px 4px;
+        margin-bottom: 10px;
+        border: 1px solid #b39b9b;
+        outline: none;
+    }
+
+    .form__submit{
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+}

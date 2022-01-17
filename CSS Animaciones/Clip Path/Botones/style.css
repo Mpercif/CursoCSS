@@ -1,0 +1,96 @@
+*::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    height: 100vh;
+    display: grid;
+    gap: 2em;
+    align-content: start;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.button{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #673ab7;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button--opacitiy::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .3;
+    clip-path: circle(0 at center);
+    transition: clip-path 0.3s ease;
+}
+
+.button--opacitiy:hover::before{
+    clip-path: circle(100% at center);
+}
+
+.button__text{
+    position: relative;
+    z-index: 1;
+}
+
+.button--bg{
+    background-color: #fff;
+    color: #673ab7;
+}
+
+.button--bg::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #673ab7;
+    clip-path: circle(0 at center left);
+    transition: clip-path 0.5s ease;
+}
+
+.button--bg:hover::before, 
+.button--bg:hover
+{
+    clip-path: circle(200% at center left);
+    color: white;
+}
+
+.link{
+    display: inline-block;
+    color: #673ab7;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.link::after{
+    content: "";
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: #673ab7;
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+    transition: clip-path 0.3s ease;
+}
+
+.link:hover::after{
+    clip-path: polygon(0 25%, 100% 0, 52% 24%, 100% 60%);
+}
